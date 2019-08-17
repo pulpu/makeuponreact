@@ -1,0 +1,23 @@
+.nav {
+    width: 90%;
+    margin: 15% 0% 0% 20%;
+
+    &__warpper {
+        width: 85%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        list-style: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+        &:hover {
+            border-color: rgb(175, 162, 126);
+        }
+    }
+    &__title {
+
+    }
+}

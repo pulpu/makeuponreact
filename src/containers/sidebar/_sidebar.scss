@@ -1,0 +1,35 @@
+.sidebar {
+    max-width: 300px;
+    display: inline-block;
+    height: 100vh;
+    width: 23vw;
+    min-width: 215px;
+    position: relative;
+
+    &:after {
+        content: '';
+        background: antiquewhite;
+        display: inline-block;
+        height: 100vh;
+        width: 100vw;
+        transform: skewX(-5deg);
+        margin-left: -45px;
+        top: 0;
+        right: 30px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 100vh;
+        right: -1px;
+        border-bottom: 100vh solid #fbf7f2;
+        border-left: 100px solid transparent;
+    }
+
+    &__wrapper {
+    }
+}

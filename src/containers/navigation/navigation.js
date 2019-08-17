@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 
 
 class Navigation extends Component {
   render() {
     return (
-    <nav className="navigation">
-      navigation
+    <nav className="nav">
+      <ul className="nav__warpper">
+        <li className="nav__item"><span className="nav__item__title">Bride</span></li>
+        <li className="nav__item"><span className="nav__item__title">Cover</span></li>
+        <li className="nav__item"><span className="nav__item__title">celebriy</span></li>
+        <li className="nav__item"><span className="nav__item__title">altceva </span></li>
+        <li className="nav__item"><span className="nav__item__title">inca ceva</span></li>
+      </ul>
     </nav>
+    
     )};
 }
 
-export default App;
+export default Navigation;
