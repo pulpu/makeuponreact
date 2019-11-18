@@ -5,16 +5,48 @@ import React, {Component} from 'react';
 class Navigation extends Component {
   render() {
     return (
-    <nav className="nav">
-      <ul className="nav__warpper">
-        <li className="nav__item"><span className="nav__item__title">Bride</span></li>
-        <li className="nav__item"><span className="nav__item__title">Cover</span></li>
-        <li className="nav__item"><span className="nav__item__title">celebriy</span></li>
-        <li className="nav__item"><span className="nav__item__title">altceva </span></li>
-        <li className="nav__item"><span className="nav__item__title">inca ceva</span></li>
-      </ul>
-    </nav>
-    
+      <div>
+        <button className="nav__toggle"></button>
+        <nav className="nav">
+          <div className="nav__wrapper">
+            <div className="nav__item">
+              <div className="nav__item-outer">
+                <div className="nav__item-inner">
+                  <span className="nav__title"><span>nav title 1</span></span>
+                </div>
+              </div>
+            </div>  
+            <div className="nav__item">
+              <div className="nav__item-outer">
+                <div className="nav__item-inner">
+                  <span className="nav__title"><span>nav title 2</span></span>
+                </div>
+              </div>
+            </div>             
+            <div className="nav__item">
+              <div className="nav__item-outer">
+                <div className="nav__item-inner">
+                  <span className="nav__title"><span>nav title 3</span></span>
+                </div>
+              </div>
+            </div>             
+            <div className="nav__item">
+              <div className="nav__item-outer">
+                <div className="nav__item-inner">
+                  <span className="nav__title"><span>nav title 4</span></span>
+                </div>
+              </div>
+            </div>             
+            <div className="nav__item">
+              <div className="nav__item-outer">
+                <div className="nav__item-inner">
+                  <span className="nav__title"><span>nav title 5</span></span>
+                </div>
+              </div>
+            </div>          
+          </div>
+        </nav>
+      </div>
     )};
 }
 

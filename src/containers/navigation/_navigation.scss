@@ -1,23 +1,216 @@
 .nav {
-    width: 90%;
-    margin: 15% 0% 0% 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    z-index: 5;
+    transition: visibility 1.5s cubic-bezier(.08,.03,.22,.87);
 
-    &__warpper {
-        width: 85%;
-        padding: 0;
-        margin: 0;
+    
+    &--active {
+        visibility: visible;
+        transition: visibility .8s cubic-bezier(.08,.03,.22,.87);
+    }
+
+    &__wrapper {
+        @media (min-width: 992px) {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        }
     }
 
     &__item {
-        list-style: none;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff;
-        cursor: pointer;
-        &:hover {
-            border-color: rgb(175, 162, 126);
+        position: relative;
+        width: 25%;
+        text-align: center;
+        height: 100%;
+        
+
+        &:first-child {
+            .nav__item-outer {
+                @media (min-width: 992px) {
+                    transition: width .8s cubic-bezier(.08,.03,.22,.87) .1s,padding .8s 
+                    cubic-bezier(.08,.03,.22,.87) .1s,background-color 2s 
+                    cubic-bezier(.08,.03,.22,.87),border 1s 
+                    cubic-bezier(.08,.03,.22,.87) .1s;
+                    transition-delay: .2s;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            .nav__item-outer {
+                @media (min-width: 992px) {
+                    transition: width .8s cubic-bezier(.08,.03,.22,.87) .2s,padding .8s 
+                    cubic-bezier(.08,.03,.22,.87) .2s,background-color 2s 
+                    cubic-bezier(.08,.03,.22,.87),border 1s 
+                    cubic-bezier(.08,.03,.22,.87) .2s;    
+                    transition-delay: .4s;           
+                 }
+            }
+        }
+
+        &:nth-child(3) {
+            .nav__item-outer {
+                @media (min-width: 992px) {
+                    transition: width .8s cubic-bezier(.08,.03,.22,.87) .3s,padding .8s 
+                    cubic-bezier(.08,.03,.22,.87) .3s,background-color 2s 
+                    cubic-bezier(.08,.03,.22,.87),border 1s 
+                    cubic-bezier(.08,.03,.22,.87) .3s;   
+                    transition-delay: .6s;         
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            .nav__item-outer {
+                @media (min-width: 992px) {
+                    transition: width .8s cubic-bezier(.08,.03,.22,.87) .4s,padding .8s 
+                    cubic-bezier(.08,.03,.22,.87) .4s,background-color 2s 
+                    cubic-bezier(.08,.03,.22,.87),border 1s 
+                    cubic-bezier(.08,.03,.22,.87) .4s;   
+                    transition-delay: .8s             
+                }
+            }
+        }
+        &:nth-child(5) {
+            .nav__item-outer {
+                @media (min-width: 992px) {
+                    transition: width .8s cubic-bezier(.08,.03,.22,.87) .5s,padding .8s 
+                    cubic-bezier(.08,.03,.22,.87) .5s,background-color 2s 
+                    cubic-bezier(.08,.03,.22,.87),border 1s 
+                    cubic-bezier(.08,.03,.22,.87) .5s;   
+                    transition-delay: 1s;         
+                }
+            }
         }
     }
-    &__title {
 
+    &__item-outer {
+        @media (min-width: 992px) {
+            background-color: #f5f5f5;
+            border-right: 0 solid transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            padding: 0;
+            overflow: hidden;
+
+            .nav--active & {
+                width: 100%;
+                padding: 0 12%;
+            }
+        }
     }
+
+    &__item-inner {
+        position: absolute;
+        height: 280px;
+        top: 50%;
+        left: 100px;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        transition: opacity 1s ease;
+        z-index: 2;
+        .nav--active & {
+            opacity: 1;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 3vw;
+        font-family: Didot,sans-serif;
+        letter-spacing: .4rem;
+        text-indent: .7rem;
+        margin-bottom: 40px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 50%;
+            width: 105%;
+            -webkit-transform-origin: left;
+            transform-origin: left;
+            -webkit-transform: translateX(-50%) scaleX(0);
+            transform: translateX(-50%) scaleX(0);
+            background-color: #fff;
+            transition: -webkit-transform .6s cubic-bezier(.08,.03,.22,.87);
+            transition: transform .6s cubic-bezier(.08,.03,.22,.87);
+            transition: transform .6s cubic-bezier(.08,.03,.22,.87),-webkit-transform .6s cubic-bezier(.08,.03,.22,.87);
+            z-index: -1;
+        }
+
+        &:hover {
+            &:before {
+                -webkit-transform: translateX(-50%) scaleX(1);
+                transform: translateX(-50%) scaleX(1);
+            }
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__toggle {
+        position: fixed;
+    top: 30px;
+    left: 40px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #0b0b0b;
+            margin: 6px 0;
+            transition: background-color .5s,-webkit-transform .8s cubic-bezier(.08,.03,.22,.87);
+            transition: background-color .5s,transform .8s cubic-bezier(.08,.03,.22,.87);
+            transition: background-color .5s,transform .8s cubic-bezier(.08,.03,.22,.87),-webkit-transform .8s cubic-bezier(.08,.03,.22,.87);
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #0b0b0b;
+            margin: 6px 0;
+            transition: background-color .5s,-webkit-transform .8s cubic-bezier(.08,.03,.22,.87);
+            transition: background-color .5s,transform .8s cubic-bezier(.08,.03,.22,.87);
+            transition: background-color .5s,transform .8s cubic-bezier(.08,.03,.22,.87),-webkit-transform .8s cubic-bezier(.08,.03,.22,.87);
+        }
+
+        &--active {
+            &:before {
+                transform: rotate(45deg);
+                position: absolute;
+                top: 5px;
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 5px;
+            }
+        }
+    }
+
+
 }
