@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 // import loginComponent from './components/loginComponent'
 // import { requireAuthentication } from './components/AuthenticatedComponent'
 import NoMatch from "./pages/NoMatch"
-import ImagesContent from "./containers/content/imagesContent"
+import ImagesContent from "./components/content/imagesContent"
 
 
 class Router extends React.Component {

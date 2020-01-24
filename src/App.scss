@@ -1,10 +1,9 @@
 @import "../src/styles/global";
 
-@import "./containers/sidebar/sidebar";
-@import "./containers/content/content";
-@import "./containers/home/home";
-@import "./containers/logo/logo";
-@import "./containers/navigation/navigation";
+@import "components/sidebar/sidebar";
+@import "components/content/content";
+@import "components/logo/logo";
+@import "components/navigation/navigation";
 
 .App {
 
