@@ -1,19 +1,25 @@
 import React from 'react'
-import {  Route, Switch } from 'react-router-dom'
-import App from './App'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 // import loginComponent from './components/loginComponent'
 // import { requireAuthentication } from './components/AuthenticatedComponent'
-import Home from './containers/home/home'
-import Content from './containers/content/content'
+import NoMatch from "./pages/NoMatch"
+import ImagesContent from "./containers/content/imagesContent"
 
-const Routes = () => (
-    <App>
-        <Switch>
-            {/* <Route exact path="/app" component={App} /> */}
-            <Route exact path="/" component={Home} />
-            <Route exact path="/bride" component={Content} />
-            {/* <Route  path="/listing" component={requireAuthentication(UsersListingComponent)}/>  */}
-        </Switch>
-    </App> )
 
-export default Routes
+class Router extends React.Component {
+    render(){
+        return(
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" render={(props) => <ImagesContent {...props} page={'home'}/>} />
+                    <Route exact path="/brides" render={(props) => <ImagesContent {...props} page={'brides'}/>} />
+                    <Route exact path="/cover" render={(props) => <ImagesContent {...props} page={'cover'}/>} />
+                    <Route component={NoMatch} />
+                </Switch>
+            </BrowserRouter>
+        )
+    }
+}
+
+export default Router;
+

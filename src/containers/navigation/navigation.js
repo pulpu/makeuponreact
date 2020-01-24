@@ -1,25 +1,40 @@
 import React, {Component} from 'react';
-
-
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props)
+    // this.MethodGet = new GetMethod(this)
+    this.state = {
+      navToggle: true,
+    };
+    this.navToggle = this.navToggle.bind(this)
+  }
+
+
+  navToggle() {
+    this.setState({
+      navToggle: !this.state.navToggle
+    })
+  }
+
   render() {
     return (
       <div>
-        <button className="nav__toggle"></button>
-        <nav className="nav">
+        <button className="nav__toggle"  onClick={this.navToggle}></button>
+        <nav className={this.state.navToggle ? 'nav nav--active' : 'nav'}>
           <div className="nav__wrapper">
             <div className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><span>nav title 1</span></span>
+                  <span className="nav__title"><Link onClick={this.navToggle} to="/cover">Cover</Link></span>
                 </div>
               </div>
             </div>  
             <div className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><span>nav title 2</span></span>
+                  <span className="nav__title"><Link onClick={this.navToggle} to="/brides">Brides</Link></span>
                 </div>
               </div>
             </div>             
