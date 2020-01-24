@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/intro/intro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/content/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/content/imagesContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/imagesContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home/_home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home/home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/intro/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ services/api/APIget /getMethod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/intro/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/_intro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/logo/_logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logo/_logo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/logo/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logo/logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/navigation/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/navigation/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/sidebar/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/sidebar/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
