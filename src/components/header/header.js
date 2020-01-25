@@ -1,15 +1,12 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Logo from '../logo/logo'
 
-
-class Header extends Component {
-  render() {
+const Header = (props) => {
     return (
-    <header className="header">
-          header
-    </header>
-    )};
-}
+        <header className="header">
+              <Logo/>
+        </header>
+    );
+};
 
-export default App;
+export default Header;

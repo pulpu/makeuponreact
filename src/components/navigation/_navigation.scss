@@ -164,14 +164,15 @@
     }
 
     &__toggle {
-        position: fixed;
-    top: 30px;
+    position: fixed;
+    top: 16px;
     left: 40px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 25px;
     height: 25px;
     z-index: 10;
+    outline: none !important;
 
         &:before {
             content: "";

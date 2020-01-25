@@ -6,7 +6,6 @@ const db = firebase.firestore();
         .collection(colection).get();
 
     return snapshot.docs.map(doc => {
-        let _obj = doc.data();
         return { ...doc.data(), 'id': doc.id};
     });
 }

@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/gallery/gallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ services/api/APIget /getMethod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ services/api/APIget/getMethod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/imagesContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/imagesContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/logo/_logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logo/_logo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +46,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/gallery" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -56,9 +73,9 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="755" y="456" width="399" height="149" key="NewPhpFileDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1579863098426" />
-    <state x="605" y="262" width="709" height="538" key="find.popup" timestamp="1579878269305">
+    <state x="605" y="262" width="709" height="538" key="find.popup" timestamp="1579944646102">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="605" y="262" width="709" height="538" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1579878269305" />
+    <state x="605" y="262" width="709" height="538" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1579944646102" />
   </component>
 </project>
