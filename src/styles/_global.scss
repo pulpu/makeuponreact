@@ -1,3 +1,11 @@
+body {
+    overflow: hidden;
+}
+
+.remove-overflow {
+    overflow: inherit;
+}
+
 button {
     background: transparent;
     border: 0;

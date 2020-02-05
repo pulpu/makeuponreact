@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/actions/actionType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mycontext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/provider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/imagesContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/imagesContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallery/_gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/_gallery.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallery/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/_intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +52,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -53,6 +70,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579861703960</updated>
       <workItem from="1579861705255" duration="14332000" />
+      <workItem from="1579993442199" duration="5271000" />
+      <workItem from="1580112221291" duration="63000" />
+      <workItem from="1580112329797" duration="7000" />
+      <workItem from="1580141215723" duration="2987000" />
+      <workItem from="1580214602648" duration="98000" />
+      <workItem from="1580888390512" duration="12232000" />
     </task>
     <servers />
   </component>
@@ -60,13 +83,32 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="525" y="125" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579972494595">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="525" y="125" width="860" height="812" key="CommitChangelistDialog2/0.27.1920.1010@0.27.1920.1010" timestamp="1579972494595" />
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580214698356">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="743" y="322" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1580214698356" />
+    <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112334841" />
     <state x="755" y="456" width="399" height="149" key="NewPhpFileDialog" timestamp="1579863098426">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="755" y="456" width="399" height="149" key="NewPhpFileDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1579863098426" />
-    <state x="605" y="262" width="709" height="538" key="find.popup" timestamp="1579944646102">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1580899549370">
+      <screen x="1920" y="0" width="1920" height="1200" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580899549370" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1580214674792">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="605" y="262" width="709" height="538" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1579944646102" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580214674792" />
+    <state x="616" y="397" key="com.intellij.ide.util.TipDialog/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112329739" />
+    <state x="2681" y="356" width="709" height="640" key="find.popup" timestamp="1580900544436">
+      <screen x="1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="605" y="262" width="709" height="538" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1579973211500" />
+    <state x="2681" y="356" width="709" height="640" key="find.popup/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580900544436" />
   </component>
 </project>

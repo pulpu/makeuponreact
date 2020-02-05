@@ -5,6 +5,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
+import MyContext from "../../mycontext";
 
 const masonryOptions = {
     transitionDuration: 4
@@ -14,6 +15,7 @@ const imagesLoadedOptions = { background: '.my-bg-image-el'}
 
 
 const Gallery = (props) => {
+    const {infoCategoryState} = React.useContext(MyContext);
     const [open, setOpen] = React.useState(false);
     const [elementInfo, setElementInfo ] = useState({});
 
@@ -33,7 +35,7 @@ const Gallery = (props) => {
         return (
             <div className="image-element-class col-lg-3 col-md-4 col-sm-6 col-xs-12 pb-4" key={element.id}>
                 <div >
-                    <img onClick={()=> handleClickOpen(element)} className={'article-image'} src={element.img} alt={element.company} />
+                    <img onClick={()=> handleClickOpen(element)} className={!infoCategoryState ? 'article-image remove-filter' : 'article-image' } src={element.img} alt={element.company} />
                 </div>
             </div>
         );

@@ -11,6 +11,7 @@
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
   }
+
   .article-image {
     margin-left: auto;
     margin-right: auto;
@@ -18,10 +19,18 @@
     max-width: 100%;
     height: auto;
     width: 100%;
+    transition: filter 0.3s ease-in-out;
+    transition: -webkit-filter 0.3s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) blur(1px);
   }
 }
 
 .modal-image {
   max-width:100%;
   max-height: calc(100vh - 110px);
+}
+
+.remove-filter {
+  filter: grayscale(0%) blur(0px) !important;
 }
