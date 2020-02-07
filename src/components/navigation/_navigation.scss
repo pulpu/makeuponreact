@@ -8,13 +8,42 @@
     z-index: 5;
     transition: visibility 1.5s cubic-bezier(.08,.03,.22,.87);
 
-    
+    @media (max-width: 992px) {
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        transition: opacity .8s,visibility .8s cubic-bezier(.08,.03,.22,.87);
+        transition-delay: .5s;
+    }
+
     &--active {
         visibility: visible;
         transition: visibility .8s cubic-bezier(.08,.03,.22,.87);
+
+        @media (max-width: 992px) {
+            opacity: 1;
+            transition: opacity .8s,visibility .8s,background-color 1s cubic-bezier(.08,.03,.22,.87);
+            transition-delay: 0s;
+            visibility: visible;
+        }
+
+        .nav__item {
+            @media (max-width: 992px) {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: .3s;
+            }
+        }
+
     }
 
     &__wrapper {
+        @media (max-width: 992px) {
+            width: 100%;
+            display: block;
+        }
+
         @media (min-width: 992px) {
         height: 100%;
         width: 100%;
@@ -27,7 +56,17 @@
         width: 25%;
         text-align: center;
         height: 100%;
-        
+
+        @media (max-width: 992px) {
+            position: relative;
+            text-align: center;
+            display: block;
+            width: 100%;
+            opacity: 0;
+            transition: transform .8s cubic-bezier(.08,.03,.22,.87) .3s,
+            opacity .8s cubic-bezier(.08,.03,.22,.87) .3s;
+            transform: translateY(20px);
+        }
 
         &:first-child {
             .nav__item-outer {
@@ -118,6 +157,13 @@
         opacity: 0;
         transition: opacity 1s ease;
         z-index: 2;
+
+        @media (max-width: 992px) {
+            position: initial;
+            height: auto;
+            transform: translate(0);
+        }
+
         .nav--active & {
             opacity: 1;
         }
