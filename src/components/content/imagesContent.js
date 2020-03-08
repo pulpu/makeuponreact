@@ -6,6 +6,7 @@ import Header from "../header/header";
 import Intro from "../intro/intro";
 import {getCollection} from "../../ services/api/APIget/getMethod";
 
+
 const ImagesContent = (props) => {
 
     const [imagesList, setImagesList]           = useState([]);

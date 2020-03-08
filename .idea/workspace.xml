@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/_gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/_gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/intro/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/_intro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/imagesContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/imagesContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,15 @@
       <workItem from="1580888390512" duration="12508000" />
       <workItem from="1580931452797" duration="908000" />
       <workItem from="1581020048824" duration="3118000" />
+      <workItem from="1581929788779" duration="123000" />
+      <workItem from="1581971583687" duration="784000" />
+      <workItem from="1582041496759" duration="2476000" />
+      <workItem from="1582062123646" duration="2132000" />
+      <workItem from="1582065357091" duration="468000" />
+      <workItem from="1582118242263" duration="61000" />
+      <workItem from="1582118305059" duration="5612000" />
+      <workItem from="1582143271069" duration="13000" />
+      <workItem from="1583322230762" duration="11000" />
     </task>
     <servers />
   </component>
@@ -72,13 +81,14 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="525" y="125" width="860" height="812" key="CommitChangelistDialog2/0.27.1920.1010@0.27.1920.1010" timestamp="1579972494595" />
-    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580982931732">
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582143282714">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="743" y="322" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1580214698356" />
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1582143282714" />
+    <state x="2229" y="357" width="424" height="484" key="FileChooserDialogImpl/0.27.5760.1130@0.27.5760.1130" timestamp="1582014311354" />
     <state x="743" y="322" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1010/1920.0.1920.1200@0.27.1920.1010" timestamp="1580982931732" />
     <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112334841" />
-    <state x="2663" y="350" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580903608934" />
+    <state x="2663" y="350" width="424" height="484" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1582126258471" />
     <state x="755" y="456" width="399" height="149" key="NewPhpFileDialog" timestamp="1579863098426">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
@@ -87,10 +97,10 @@
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="498" height="446" key="SwitcherDM/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580899549370" />
-    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1580214674792">
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1582062123713">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580214674792" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1582062123713" />
     <state x="616" y="397" key="com.intellij.ide.util.TipDialog/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112329739" />
     <state x="995" y="396" width="709" height="538" key="find.popup" timestamp="1581065156747">
       <screen x="0" y="27" width="5760" height="1130" />

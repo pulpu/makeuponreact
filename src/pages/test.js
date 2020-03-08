@@ -1,21 +1,43 @@
 import React from 'react';
-import { useSelector, useDispatch, getState } from 'react-redux'
+import firebase from '../firebase'
 
 const Test = (props) => {
-    const counter = useSelector(state => state.counter);
-    const dispatch = useDispatch();
-    function test() {
-        console.log(counter)
+    function login() {
+        var provider = new firebase.auth.GoogleAuthProvider();
 
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            var result = result;
+            console.log('result', result);
+            // The signed-in user info.
+            var user = result.user;
+            console.log('user', user);
+            // ...
+
+
+        }).then(() => {
+            firebase.auth().currentUser.getIdTokenResult()
+                .then((idTokenResult) => {
+                    // Confirm the user is an Admin.
+                    if (!!idTokenResult.claims.admin) {
+                        // Show admin UI.
+                        console.log('idTokenResult', idTokenResult.claims.admin);
+                        //showAdminUI();
+                    } else {
+                        console.log('idTokenResult', idTokenResult.claims.admin);
+                    }
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        });
     }
 
     return (
         <div className="Test">
-            TesT {counter}
             <br/>
-            <button  onClick={(() => dispatch({ type: 'SIMPLE_UNDO' }))}>click</button>
             <br/>
-            <button  onClick={test}>test</button>
+            <button  onClick={login}>test</button>
         </div>
     );
 };
