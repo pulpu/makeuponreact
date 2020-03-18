@@ -3,9 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/actionType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actionType.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/content/imagesContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/imagesContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/_gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/_gallery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/_intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +47,9 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/content" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/gallery" />
     </key>
@@ -70,6 +82,16 @@
       <workItem from="1582118305059" duration="5612000" />
       <workItem from="1582143271069" duration="13000" />
       <workItem from="1583322230762" duration="11000" />
+      <workItem from="1583664011513" duration="18180000" />
+      <workItem from="1583700280613" duration="2754000" />
+      <workItem from="1583785173761" duration="3667000" />
+      <workItem from="1584033801635" duration="2787000" />
+      <workItem from="1584051632889" duration="4715000" />
+      <workItem from="1584080757738" duration="29000" />
+      <workItem from="1584085016423" duration="506000" />
+      <workItem from="1584176787763" duration="6261000" />
+      <workItem from="1584276257061" duration="11713000" />
+      <workItem from="1584342963163" duration="78000" />
     </task>
     <servers />
   </component>
@@ -81,10 +103,11 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="525" y="125" width="860" height="812" key="CommitChangelistDialog2/0.27.1920.1010@0.27.1920.1010" timestamp="1579972494595" />
-    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582143282714">
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584343038296">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1582143282714" />
+    <state x="743" y="322" key="FileChooserDialogImpl/0.27.1920.1010/1920.0.1920.1080@0.27.1920.1010" timestamp="1584343038296" />
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1584080770198" />
     <state x="2229" y="357" width="424" height="484" key="FileChooserDialogImpl/0.27.5760.1130@0.27.5760.1130" timestamp="1582014311354" />
     <state x="743" y="322" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1010/1920.0.1920.1200@0.27.1920.1010" timestamp="1580982931732" />
     <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112334841" />
@@ -97,16 +120,21 @@
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="498" height="446" key="SwitcherDM/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580899549370" />
-    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1582062123713">
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1584342981505">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1582062123713" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010/1920.0.1920.1080@0.27.1920.1010" timestamp="1584342981505" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1584276257116" />
     <state x="616" y="397" key="com.intellij.ide.util.TipDialog/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112329739" />
-    <state x="995" y="396" width="709" height="538" key="find.popup" timestamp="1581065156747">
-      <screen x="0" y="27" width="5760" height="1130" />
+    <state x="491" y="378" width="709" height="578" key="find.popup" timestamp="1584278903624">
+      <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="605" y="262" width="709" height="538" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1581020796539" />
+    <state x="491" y="378" width="709" height="578" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1584278903624" />
     <state x="995" y="396" width="709" height="538" key="find.popup/0.27.5760.1130@0.27.5760.1130" timestamp="1581065156747" />
     <state x="2681" y="356" width="709" height="640" key="find.popup/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580900544436" />
+    <state x="623" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1583786755650">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="623" y="247" width="672" height="678" key="search.everywhere.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1583786755650" />
   </component>
 </project>

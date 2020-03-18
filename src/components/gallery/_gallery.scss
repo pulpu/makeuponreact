@@ -30,5 +30,17 @@
 }
 
 .remove-filter {
-  filter: grayscale(0%) blur(0px) !important;
+  .article-image {
+    filter: grayscale(0%) blur(0px) !important;
+  }
 }
+
+.hidden {
+  opacity: 0
+}
+
+.my-gallery-class {
+  opacity: 1;
+  transition: opacity 1.2s;
+}
+

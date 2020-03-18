@@ -1,3 +1,6 @@
 export const CLOSE_CATEGORY_INFO = 'CLOSE_CATEGORY_INFO';
 export const OPEN_CATEGORY_INFO = 'OPEN_CATEGORY_INFO';
+export const TOGGLE_NAV = 'TOGGLE_NAV';
+export const IMAGES_LOADED = 'IMAGES_LOADED';
+
 
