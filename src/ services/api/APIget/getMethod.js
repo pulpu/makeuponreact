@@ -1,12 +1,29 @@
 import firebase from "../../../firebase";
 const db = firebase.firestore();
 
- export async function getCollection(document, colection) {
-    const snapshot = await db.collection("data").doc(document)
-        .collection(colection).get();
+ export async function getCollection(document, colection, orderby, limit,doc ) {
+     let snapshot;
 
-    return snapshot.docs.map(doc => {
-        return { ...doc.data(), 'id': doc.id};
+     if(typeof orderby !== 'undefined' && typeof limit !== 'undefined') {
+         snapshot = await db.collection("data").doc(document)
+             .collection(colection).orderBy(orderby).limit(limit).startAfter(doc).get();
+     } else if (typeof orderby !== 'undefined' && typeof limit === 'undefined') {
+         snapshot = await db.collection("data").doc(document)
+             .collection(colection).orderBy(orderby).get();
+     } else  {
+         snapshot = await db.collection("data").doc(document)
+             .collection(colection).get();
+     }
+
+     let lastVisible = snapshot.docs[snapshot.docs.length-1];
+
+    return snapshot.docs.map( (doc, index) => {
+        let last = null;
+        if(snapshot.docs.length-1 === index) {
+            last = {'lastElement':lastVisible};
+        }
+       // console.log('doc', doc)
+        return { ...doc.data(), 'id': doc.id, ...last};
     });
 }
 

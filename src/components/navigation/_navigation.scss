@@ -56,6 +56,7 @@
         width: 25%;
         text-align: center;
         height: 100%;
+        border-right: 1px solid #e8e8e8;
 
         @media (max-width: 992px) {
             position: relative;
@@ -171,12 +172,22 @@
 
     &__title {
         display: inline-block;
-        font-size: 3vw;
-        font-family: Didot,sans-serif;
-        letter-spacing: .4rem;
+        font-size: 3rem;
+        font-family: Roboto,sans-serif;
+        font-weight: 300;
+        letter-spacing: .1rem;
         text-indent: .7rem;
         margin-bottom: 40px;
         position: relative;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                text-decoration: none;
+                color: #000;
+            }
+        }
 
         &:before {
             content: "";

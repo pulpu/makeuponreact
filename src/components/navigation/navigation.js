@@ -27,21 +27,21 @@ const Navigation = (props)=> {
             <div className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><span>nav title 3</span></span>
+                  <span className="nav__title"><span>Movie</span></span>
                 </div>
               </div>
             </div>
             <div className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><span>nav title 4</span></span>
+                  <span className="nav__title"><span>Pictorial</span></span>
                 </div>
               </div>
             </div>
             <div className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><span >nav title 5</span></span>
+                  <span className="nav__title"><span >Contact</span></span>
                 </div>
               </div>
             </div>

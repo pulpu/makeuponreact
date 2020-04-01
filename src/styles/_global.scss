@@ -33,3 +33,8 @@ button:focus {
 .container-fluid {
     width: calc(100% - 80px) !important
 }
+
+
+.infinite-scroll-component  {
+    overflow-y: hidden !important;
+}

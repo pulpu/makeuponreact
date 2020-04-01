@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import Masonry from 'react-masonry-component';
 import MyContext from "../../mycontext";
 import {SRLWrapper} from "simple-react-lightbox";
+import { LazyImageFull, ImageState } from "react-lazy-images";
+import loader from '../../assets/svgs/loader.svg'
 
 const masonryOptions = {
     transitionDuration: 0
@@ -16,14 +18,29 @@ const Gallery = (props) => {
         let test = props.elements.map(function(element, _in){
             return (
                 <div className="image-element-class col-lg-3 col-md-4 col-sm-6 col-xs-12 pb-4" key={_in} >
-                    <>
-                        <img className={'article-image'} src={element.img} alt={'1' + element.company}/>
-                    </>
+                    <LazyImageFull src={loader}>
+                        {({ imageProps, imageState, ref }) => (
+                        <img
+                            className={'article-image'}
+                          //  src={element.img}
+                            alt={'1' + element.company}
+                            {...imageProps}
+                            ref={ref}
+                            src={
+                                imageState === ImageState.LoadSuccess
+                                    ? element.smallImg
+                                    : loader
+                            }
+                            style={{ opacity: ImageState.LoadSuccess ? "1" : "0.5" }}
+                        /> )}
+                    </LazyImageFull>
                 </div>
             );
         });
         setChildElements(test)
     }, [props.elements]);
+
+
 
     return (
         <div className={!infoCategoryState ?  'remove-filter' : '' }>
@@ -31,7 +48,6 @@ const Gallery = (props) => {
                 !childElements.length ? null :
                     <div>
                         <SRLWrapper>
-                            {console.log('>>>>', infoCategoryState)}
                             <Masonry
                                 className={props.show ? 'my-gallery-class' : 'hidden'} // default ''
                                 elementType={'div'} // default 'div'

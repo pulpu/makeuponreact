@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'New_Direction';  // **** for logo ****
+  src:  url('../assets/fonts/NewDirection/New_Direction.ttf') format('truetype'),
+  url('../assets/fonts/NewDirection/New_Direction.svg#New_Direction') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', serif;
+  font-size: 0.875em;
+}
