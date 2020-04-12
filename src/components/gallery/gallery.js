@@ -13,9 +13,10 @@ const imagesLoadedOptions = { background: '.my-bg-image-el'}
 const Gallery = (props) => {
     const {infoCategoryState, toggleNav} = React.useContext(MyContext);
     const [childElements, setChildElements] = React.useState([]);
+    const [distroyState, setDistroyState] = React.useState([toggleNav]);
 
     useEffect(()=>{
-        let test = props.elements.map(function(element, _in){
+        let itemsElements = props.elements.map(function(element, _in){
             return (
                 <div className="image-element-class col-lg-3 col-md-4 col-sm-6 col-xs-12 pb-4" key={_in} >
                     <LazyImageFull src={loader}>
@@ -37,14 +38,15 @@ const Gallery = (props) => {
                 </div>
             );
         });
-        setChildElements(test)
+        setChildElements(itemsElements)
+        setDistroyState(toggleNav)
     }, [props.elements]);
 
 
 
     return (
         <div className={!infoCategoryState ?  'remove-filter' : '' }>
-            {toggleNav ? null :
+            {distroyState ? null :
                 !childElements.length ? null :
                     <div>
                         <SRLWrapper>

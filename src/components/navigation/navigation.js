@@ -10,20 +10,20 @@ const Navigation = (props)=> {
         <button className="nav__toggle"  onClick={navToggleAndReset}></button>
         <nav className={toggleNav ? 'nav nav--active' : 'nav'}>
           <div className="nav__wrapper">
-            <div className="nav__item">
+            <Link onClick={()=>{openCategoryInfo();navToggleAndReset()} } to="/cover" className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><Link onClick={()=>{openCategoryInfo();navToggleAndReset()} } to="/cover">Cover</Link></span>
+                  <span className="nav__title">Cover</span>
                 </div>
               </div>
-            </div>
-            <div className="nav__item">
+            </Link>
+            <Link onClick={()=>{openCategoryInfo();navToggleAndReset()} } to="/brides" className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
-                  <span className="nav__title"><Link onClick={()=>{openCategoryInfo();navToggleAndReset()} } to="/brides">Brides</Link></span>
+                  <span className="nav__title">Brides</span>
                 </div>
               </div>
-            </div>
+            </Link>
             <div className="nav__item">
               <div className="nav__item-outer">
                 <div className="nav__item-inner">
