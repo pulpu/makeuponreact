@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
 import NoMatch from "./pages/NoMatch"
 import ImagesContent from "./components/content/imagesContent"
 import Test from './pages/test'
+import home from './pages/home'
 
 class Router extends React.Component {
     render(){
@@ -12,6 +13,7 @@ class Router extends React.Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" render={(props) => <ImagesContent {...props} page={'home'}/>} />
+                    <Route exact path="/home" component={home}/>} />
                     <Route exact path="/brides" render={(props) => <ImagesContent {...props} page={'brides'}/>} />
                     <Route exact path="/cover" render={(props) => <ImagesContent {...props} page={'cover'}/>} />
                     <Route exact path="/test" component={Test}/>} />

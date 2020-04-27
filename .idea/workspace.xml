@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/js/forcanvas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logo/_logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logo/_logo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -31,7 +29,6 @@
   <component name="ProjectId" id="1Wq0EDYGxe6vdiIopruad1NGUxf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -111,23 +108,26 @@
       <workItem from="1586296271925" duration="284000" />
       <workItem from="1586334302284" duration="34000" />
       <workItem from="1586553293120" duration="475000" />
-      <workItem from="1586612235575" duration="899000" />
+      <workItem from="1586612235575" duration="7229000" />
+      <workItem from="1586767222905" duration="12000" />
+      <workItem from="1586947117916" duration="625000" />
+      <workItem from="1586949441801" duration="1051000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="125" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579972494595">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="525" y="125" width="860" height="812" key="CommitChangelistDialog2/0.27.1920.1010@0.27.1920.1010" timestamp="1579972494595" />
-    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586334334800">
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586767232738">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010/1920.0.1920.1080@0.27.1920.1010" timestamp="1584967873136" />
-    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1586334334800" />
+    <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1586767232738" />
     <state x="2229" y="357" width="424" height="484" key="FileChooserDialogImpl/0.27.5760.1130@0.27.5760.1130" timestamp="1582014311354" />
     <state x="743" y="322" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1010@0.27.1920.1010" timestamp="1585817712233" />
     <state x="2663" y="315" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1010@1920.0.1920.1080" timestamp="1585295208258" />
@@ -142,11 +142,11 @@
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="498" height="446" key="SwitcherDM/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@1920.0.1920.1200" timestamp="1580899549370" />
-    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1586691798594">
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1586767222944">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010/1920.0.1920.1080@0.27.1920.1010" timestamp="1584967526269" />
-    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1586691798594" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1586767222944" />
     <state x="616" y="358" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1010@0.27.1920.1010" timestamp="1585817700770" />
     <state x="616" y="397" key="com.intellij.ide.util.TipDialog/3840.0.1920.1080/0.27.1920.1130/1920.0.1920.1200@0.27.1920.1130" timestamp="1580112329739" />
     <state x="491" y="378" width="709" height="578" key="find.popup" timestamp="1586296560012">

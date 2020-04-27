@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import CanvasSlideshow from '../pages/js/forcanvas'
+import {ImageState, LazyImageFull} from "react-lazy-images";
+import loader from "../assets/svgs/loader.svg";
 
 const Home = (props) => {
-    imagesLoaded(document.body, () => document.body.classList.remove('loading'));
-
     const spriteImages = document.querySelectorAll( '.slide-item__image' );
     const spriteImagesSrc = [];
     const texts = [];
@@ -23,7 +24,7 @@ const Home = (props) => {
 
     const initCanvasSlideshow = new CanvasSlideshow({
         sprites: spriteImagesSrc,
-        displacementImage: 'img/dmaps/512x512/crystalize.jpg',
+
         autoPlay: false,
         displaceScale: [300, 300],
         fullScreen: true,
@@ -32,6 +33,11 @@ const Home = (props) => {
         centerSprites: true,
         wacky: true
     });
+
+    useEffect(()=>{
+        CanvasSlideshow();
+    });
+
 
 
     return (
@@ -49,13 +55,11 @@ const Home = (props) => {
                 </div>
                 <button className="scene-nav scene-nav--prev" data-nav="previous">
                     <svg className="icon icon--arrow-nav-prev">
-                        <use xlink:href="#icon-arrow-nav"></use>
                     </svg>
                 </button>
                 <button className="scene-nav scene-nav--next" data-nav="next">
-                    <svg className="icon icon--arrow-nav-next">
-                        <use xlink:href="#icon-arrow-nav"></use>
-                    </svg>
+                    <i className="icon icon--arrow-nav-next">button
+                    </i>
                 </button>
             </div>
         </div>
