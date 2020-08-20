@@ -6,6 +6,35 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Didot';
+  src: url('../assets/fonts/d-din/Didot.eot?#iefix');
+  src: url('../assets/fonts/d-din/Didot.eot?#iefix') format("eot"), url('../assets/fonts/d-din/Didot.woff') format("woff"), url('../assets/fonts/d-din/Didot.woff2') format("woff2"), url('../assets/fonts/d-din/Didot.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+//@font-face {
+//  font-family: 'Din';
+//  src: url('../assets/fonts/d-din/din_Regular.eot?#iefix');
+//  src: url('../assets/fonts/d-din/din_Regular.eot?#iefix') format("eot"), url('../assets/fonts/d-din/din_Regular.woff') format("woff"), url('../assets/fonts/d-din/din_Regular.woff2') format("woff2"), url('../assets/fonts/d-din/din_Regular.ttf') format("truetype");
+//  font-weight: 400;
+//  font-style: normal
+//}
+//@font-face {
+//  font-family: Din;
+//  src: url(../assets/fonts/d-din/din-medium.eot?#iefix);
+//  src: url(../assets/fonts/d-din/din-medium.eot?#iefix) format("eot"), url(../assets/fonts/d-din/din-medium.woff) format("woff"), url(../assets/fonts/d-din/din-medium.woff2) format("woff2"), url(../assets/fonts/d-din/din-medium.ttf) format("truetype");
+//  font-weight: 600;
+//  font-style: normal
+//}
+//@font-face {
+//  font-family: Din;
+//  src: url(../assets/fonts/d-din/din-bold.eot?#iefix);
+//  src: url(../assets/fonts/d-din/din-bold.eot?#iefix) format("eot"), url(../assets/fonts/d-din/din-bold.woff) format("woff"), url(../assets/fonts/d-din/din-bold.woff2) format("woff2"), url(../assets/fonts/d-din/din-bold.ttf) format("truetype");
+//  font-weight: 700;
+//  font-style: normal
+//}
+
 body {
   font-family: 'Roboto', serif;
   font-size: 0.875em;

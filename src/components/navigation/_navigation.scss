@@ -150,6 +150,10 @@
             padding: 0;
             overflow: hidden;
 
+            &:hover {
+                background-color: #e6e6e6;
+            }
+
             .nav--active & {
                 width: 100%;
                 padding: 0 12%;
@@ -181,13 +185,18 @@
 
     &__title {
         display: inline-block;
-        font-size: 1.7rem;
-        font-weight: 300;
         margin-bottom: 40px;
         position: relative;
-        font-family: 'GFS Didot', serif;
+        font-family: Didot,sans-serif;
+        letter-spacing: .4rem;
+        text-indent: .7rem;
         color: #3f3f3f;
-
+        @media screen and (device-aspect-ratio: 40/71) {
+            font-size: 1.7rem;
+        }
+        @media (min-width: 375px) {
+            font-size: 2.7rem;
+        }
 
         a {
             text-decoration: none;

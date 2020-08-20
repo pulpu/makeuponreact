@@ -44,3 +44,210 @@
   transition: opacity 1.2s;
 }
 
+
+
+
+.photo-wrap {
+  transition: visibility 0s linear .2s,opacity .2s linear;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  color: #dfba9f;
+  &:after {
+    border-radius: 0;
+    background-clip: padding-box;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    transition: visibility 0s linear .2s,opacity .2s linear;
+  }
+  img {
+    border-radius: 0;
+    background-clip: padding-box;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  &:hover {
+    zoom: 1;
+    //filter: alpha(opacity=60);
+    //opacity: .6;
+    // filter: contrast(150%) grayscale(100%);
+    img {
+      transform: scale(1.2);
+      transition: 0.6s;
+
+    }
+    .ltx-border-top,
+    .ltx-border-bottom {
+      &:before {
+        transform: scale(1)!important;
+      }
+    }
+    .ltx-border-top,
+    .ltx-border-bottom{
+      &:after {
+        transform: scale(1)!important;
+      }
+    }
+    .inner-content{transform:translate(-50%,-50%) scale(1);transition:all .3s ease 0s}
+  }
+  .ltx-border-bottom.ltx-border-top,
+  .ltx-border-top.ltx-border-top {
+    pointer-events: none;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 3;
+    position: absolute;
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+
+      &:before {
+      content: "";
+      pointer-events: none;
+      padding: 15px;
+      z-index: 3;
+      position: absolute;
+      top: -1px;
+      right: 0;
+      bottom: 0;
+      left: -1px;
+      transition: all .5s;
+      border-left: 1px solid #fff;
+      transform: scaleY(0);
+      transform-origin: 0 0;
+    }
+    &:after {
+      content: "";
+      border-top: 1px solid #fff;
+      pointer-events: none;
+      padding: 15px;
+      z-index: 3;
+      position: absolute;
+      top: -1px;
+      right: 0;
+      bottom: 0;
+      left: -1px;
+      transition: all .5s;
+      border-left: 1px solid #fff;
+      transform: scaleY(0);
+      transform-origin: 0 0;
+    }
+  }
+  .ltx-border-bottom.ltx-border-bottom,
+  .ltx-border-top.ltx-border-bottom {
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+    &:before {
+      border-right: 1px solid #fff;
+      transform: scaleY(0);
+      transform-origin: 100% 100%;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      content: "";
+      pointer-events: none;
+      padding: 15px;
+      z-index: 3;
+      position: absolute;
+      transition: all .5s;
+
+    }
+    &:after {
+      border-bottom: 1px solid #fff;
+      transform: scaleX(0);
+      transform-origin: 100% 100%;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      content: "";
+      pointer-events: none;
+      padding: 15px;
+      z-index: 3;
+      position: absolute;
+      transition: all .5s;
+    }
+  }
+
+  .title {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 5px;
+  }
+  .post {
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    left: 5px;
+  }
+  .inner-content{
+    color:#fff;
+    padding:40px 0;
+    position:absolute;
+    bottom:5%;
+    left:10%;
+    z-index:2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:translate(-50%,-50%) scale(0);
+    pointer-events: none;
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+    //  background: rgba(255,0,0,.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+.image-overlay {
+
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  transition: all .25s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  color: unset;
+  orphans: 50;
+  background-color: rgba(15,15,15, 0.37);
+  &:hover {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.link-title {
+  bottom: -10px;
+  padding: 0 1em;
+  position: absolute;
+  width: 100%;
+  transition: all .25s ease-in-out;
+  font-family: Lato, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  orphans: 50;
+}
+
+.image-element {
+  cursor: pointer;
+}

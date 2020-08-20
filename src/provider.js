@@ -12,7 +12,7 @@ const initialState = {
 
 function Provider({children}) {
 
-    const [state, dispach] = React.useReducer(RootReducer, initialState);
+    const [state, dispatch] = React.useReducer(RootReducer, initialState);
 
     const value = {
         infoCategoryState: state.infoCategoryState,
@@ -20,17 +20,17 @@ function Provider({children}) {
         imagesAreLoaded: state.imagesAreLoaded,
         closeCategoryInfo: ()=> {
             document.body.classList.add('remove-overflow');
-            dispach({type: actionTypes.CLOSE_CATEGORY_INFO})
+            dispatch({type: actionTypes.CLOSE_CATEGORY_INFO})
         },
         openCategoryInfo: (value)=> {
             document.body.classList.remove('remove-overflow');
-            dispach({type: actionTypes.OPEN_CATEGORY_INFO, value})
+            dispatch({type: actionTypes.OPEN_CATEGORY_INFO, value})
         },
         navToggleAndReset: (value)=> {
-            dispach({type: actionTypes.TOGGLE_NAV, value})
+            dispatch({type: actionTypes.TOGGLE_NAV, value})
         },
         imagesLoaded: ()=> {
-            dispach({type: actionTypes.IMAGES_LOADED, value})
+            dispatch({type: actionTypes.IMAGES_LOADED, value})
         }
     };
 
