@@ -5,6 +5,8 @@ import {SRLWrapper} from "simple-react-lightbox";
 import { LazyImageFull, ImageState } from "react-lazy-images";
 import loader from '../../assets/svgs/loader.svg'
 import Icon from '@material-ui/core/Icon';
+import SimpleReactLightbox from "simple-react-lightbox";
+
 
 const masonryOptions = {
     transitionDuration: 0
@@ -23,6 +25,7 @@ const Gallery = (props) => {
                     <LazyImageFull src={loader}>
                         {({ imageProps, imageState, ref }) => (
                             <span className="photo-wrap">
+                                <SimpleReactLightbox>
                                 <img
                                     className={'article-image'}
                                   //  src={element.img}
@@ -36,6 +39,7 @@ const Gallery = (props) => {
                                     }
                                     style={{ opacity: ImageState.LoadSuccess ? "1" : "0.5" }}
                                 />
+                                 </SimpleReactLightbox>
                                 <span className="ltx-border-top"></span>
                                 <span className="ltx-border-bottom"></span>
                                 <div className="inner-content">

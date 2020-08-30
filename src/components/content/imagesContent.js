@@ -8,20 +8,25 @@ import {getCollection} from "../../ services/api/APIget/getMethod";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { LinearProgress } from '@material-ui/core';
 import InfiniteScroll from 'react-infinite-scroll-component';
-
+import MyContext from "../../mycontext";
 
 const ImagesContent = (props) => {
     const [imagesList, setImagesList]           = useState(null);
     const [paragraphInfo, setParagraphInfo]     = useState([]);
     const [show, setShow] = React.useState(false);
     const [lastElement, setLastElement] = React.useState(null);
+    const {backupImagelist, bridesListing} = React.useContext(MyContext);
+
 
     useEffect(()=>{
-        setImagesList(null);
-        getCollection(props.page, 'items','order', 10, null).then(response =>{
-            if(response.length) {
-                setLastElement( response[response.length-1]['lastElement'])
+        var count = 0;
+        setImagesList(null)
+        //  setImagesList(bridesListing);nu imi mai trebuie (aici salvam pozele in store
+        getCollection(props.page, 'items', 'order', 10, null).then(response => {
+            if (response.length) {
+                setLastElement(response[response.length - 1]['lastElement'])
                 setImagesList(response);
+                ///backupImagelist(props.page.toUpperCase(), response); nu imi mai trebuie (aici salvam pozele in store
             }
         });
         getCollection(props.page, 'paragraph').then(response =>{
@@ -38,6 +43,7 @@ const ImagesContent = (props) => {
 
     const scrollElement = () => {
         getCollection(props.page, 'items','order', 4, lastElement).then(response =>{
+              //  backupImagelist(props.page.toUpperCase(), imagesList);nu imi mai trebuie (aici salvam pozele in store
            if(typeof response[response.length-1] !== 'undefined') {
                setLastElement( response[response.length-1].lastElement)
                setImagesList(imagesList.concat(response));

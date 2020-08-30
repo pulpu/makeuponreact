@@ -18,6 +18,10 @@ function RootReducer(state, action) {
             return {
                 ...state, imagesAreLoaded : state.imagesAreLoaded
             };
+        case actionTypes.BRIDES:
+            return {
+                ...state, bridesListing : action.value
+            }
         default:
             return state;
     }

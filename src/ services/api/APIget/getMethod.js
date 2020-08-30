@@ -3,7 +3,6 @@ const db = firebase.firestore();
 
  export async function getCollection(document, colection, orderby, limit,doc ) {
      let snapshot;
-
      if(typeof orderby !== 'undefined' && typeof limit !== 'undefined') {
          snapshot = await db.collection("data").doc(document)
              .collection(colection).orderBy(orderby).limit(limit).startAfter(doc).get();
