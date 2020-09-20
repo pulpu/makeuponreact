@@ -10,12 +10,13 @@ const {infoCategoryState, closeCategoryInfo } = React.useContext(MyContext);
     return (
             <div className={infoCategoryState ? 'intro' : 'intro intro--close'} onClick={props.action} >
                 <div className="intro__head">
-                    {!props.show ? <div className="intro__close"><CircularProgress size={24} /></div> :
-                    <button onClick={closeCategoryInfo} className="intro__close">
-                        <CloseOutlinedIcon/>
-                    </button>}
+
                 </div>
                 <div className="intro__body container-sm">
+                    {!props.show ? <div className="intro__close"><CircularProgress size={24} /></div> :
+                        <button onClick={closeCategoryInfo} className="intro__close">
+                            <CloseOutlinedIcon/>
+                        </button>}
                     <h1 className="intro__title">
                         {props.info.paragraph.en.title}
                     </h1>

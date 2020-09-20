@@ -15,12 +15,13 @@ const ImagesContent = (props) => {
     const [paragraphInfo, setParagraphInfo]     = useState([]);
     const [show, setShow] = React.useState(false);
     const [lastElement, setLastElement] = React.useState(null);
-    const {backupImagelist, bridesListing} = React.useContext(MyContext);
+    //const {backupImagelist, bridesListing} = React.useContext(MyContext);
 
 
     useEffect(()=>{
-        var count = 0;
+      //  var count = 0;
         setImagesList(null)
+      //  console.log('imagesList',imagesList)
         //  setImagesList(bridesListing);nu imi mai trebuie (aici salvam pozele in store
         getCollection(props.page, 'items', 'order', 10, null).then(response => {
             if (response.length) {
@@ -42,11 +43,15 @@ const ImagesContent = (props) => {
     };
 
     const scrollElement = () => {
+
         getCollection(props.page, 'items','order', 4, lastElement).then(response =>{
               //  backupImagelist(props.page.toUpperCase(), imagesList);nu imi mai trebuie (aici salvam pozele in store
            if(typeof response[response.length-1] !== 'undefined') {
                setLastElement( response[response.length-1].lastElement)
-               setImagesList(imagesList.concat(response));
+              // setImagesList(imagesList.concat(response));
+               setImagesList(prevData => {
+                   return [...prevData, ...response];
+               });
            }
         });
     };
@@ -57,15 +62,13 @@ const ImagesContent = (props) => {
             <Header/>
             {paragraphInfo.length  ?  <Intro info={paragraphInfo[0]} show={show}  /> :  <LinearProgress variant="query" /> }
             <div className={'container-fluid'} >
-            {imagesList ?
+                {imagesList ?
                 <InfiniteScroll
                     dataLength={imagesList.length}
                     next={scrollElement}
                     hasMore={true}
                 >
-                    <SimpleReactLightbox>
-                        <Gallery elements={imagesList} handleLayoutComplete={handleLayoutComplete} show={show} />
-                    </SimpleReactLightbox>
+                    <Gallery elements={imagesList} handleLayoutComplete={handleLayoutComplete} show={show} lastElement={lastElement}/>
                 </InfiniteScroll> : null}
             </div>
             <Footer></Footer>

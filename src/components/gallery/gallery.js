@@ -4,19 +4,30 @@ import MyContext from "../../mycontext";
 import {SRLWrapper} from "simple-react-lightbox";
 import { LazyImageFull, ImageState } from "react-lazy-images";
 import loader from '../../assets/svgs/loader.svg'
-import Icon from '@material-ui/core/Icon';
 import SimpleReactLightbox from "simple-react-lightbox";
 
-
-const masonryOptions = {
-    transitionDuration: 0
-};
-const imagesLoadedOptions = { background: '.my-bg-image-el'}
-
 const Gallery = (props) => {
+    const masonryOptions = {
+        transitionDuration: 55,
+    };
+    const imagesLoadedOptions = {
+        thumbnails: {
+            showThumbnails: false,
+        },
+        caption: {
+            showCaption: false
+        },
+        buttons: {
+            showAutoplayButton: false,
+            showCloseButton: false,
+            showDownloadButton: false,
+            showFullscreenButton: false,
+            showNextButton: true,
+            showPrevButton: true,
+        }
+    };
     const {infoCategoryState, toggleNav} = React.useContext(MyContext);
     const [childElements, setChildElements] = React.useState([]);
-    const [destroyState, setDestroyState] = React.useState([toggleNav]);
 
     useEffect(()=>{
         let itemsElements = props.elements.map(function(element, _in){
@@ -24,11 +35,9 @@ const Gallery = (props) => {
                 <div className="image-element col-lg-3 col-md-4 col-sm-6 col-xs-12 pb-4" key={_in} >
                     <LazyImageFull src={loader}>
                         {({ imageProps, imageState, ref }) => (
-                            <span className="photo-wrap">
-                                <SimpleReactLightbox>
+                            <span  className="photo-wrap"  data-attribute="SRL">
                                 <img
                                     className={'article-image'}
-                                  //  src={element.img}
                                     alt={'1' + element.company}
                                     {...imageProps}
                                     ref={ref}
@@ -39,13 +48,9 @@ const Gallery = (props) => {
                                     }
                                     style={{ opacity: ImageState.LoadSuccess ? "1" : "0.5" }}
                                 />
-                                 </SimpleReactLightbox>
                                 <span className="ltx-border-top"></span>
                                 <span className="ltx-border-bottom"></span>
                                 <div className="inner-content">
-                                    {/*<span>*/}
-                                    {/*    <Icon className="icon--add-circle">add_circle</Icon>*/}
-                                    {/*</span>*/}
                                     <h3 className="title">{element.author}</h3>
                                     <span className="post">{element.agency}</span>
                                 </div>
@@ -56,15 +61,14 @@ const Gallery = (props) => {
             );
         });
         setChildElements(itemsElements)
-        setDestroyState(toggleNav)
     }, [props.elements]);
 
     return (
-        <div className={!infoCategoryState ?  'remove-filter' : '' }>
-            {destroyState ? null :
-                !childElements.length ? null :
+        <SimpleReactLightbox>
+            <div className={!infoCategoryState ?  'remove-filter' : '' }>
+                {!childElements.length ? null :
                     <div>
-                        <SRLWrapper>
+                        <SRLWrapper options={imagesLoadedOptions}>
                             <Masonry
                                 className={props.show ? 'my-gallery-class' : 'hidden'} // default ''
                                 elementType={'div'} // default 'div'
@@ -76,10 +80,11 @@ const Gallery = (props) => {
                             >
                                 {childElements}
                             </Masonry>
-                        </SRLWrapper>
+                        </SRLWrapper >
                     </div>
-            }
-        </div>
+                }
+            </div>
+        </SimpleReactLightbox>
     );
 };
 

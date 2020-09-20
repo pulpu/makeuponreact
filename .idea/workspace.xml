@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c06a8e-a6fd-4217-9595-0c8d0121e619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ services/api/APIget/getMethod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ services/api/APIget/getMethod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actionType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actionType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/content/imagesContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/imagesContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallery/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logo/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logo/logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/_intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/intro/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/intro/intro.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -126,6 +125,21 @@
       <workItem from="1598005192313" duration="86000" />
       <workItem from="1598707408220" duration="8590000" />
       <workItem from="1598775430530" duration="3449000" />
+      <workItem from="1598874694491" duration="102000" />
+      <workItem from="1598879567344" duration="65000" />
+      <workItem from="1598981343106" duration="7529000" />
+      <workItem from="1598990527769" duration="4718000" />
+      <workItem from="1599036078911" duration="18000" />
+      <workItem from="1599067905943" duration="1107000" />
+      <workItem from="1599072124102" duration="4738000" />
+      <workItem from="1599133785187" duration="22000" />
+      <workItem from="1600288364565" duration="3342000" />
+      <workItem from="1600332926772" duration="14000" />
+      <workItem from="1600351035132" duration="616000" />
+      <workItem from="1600352146516" duration="6119000" />
+      <workItem from="1600515387031" duration="9423000" />
+      <workItem from="1600588970468" duration="3641000" />
+      <workItem from="1600601769360" duration="1007000" />
     </task>
     <servers />
   </component>
@@ -137,19 +151,23 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="638" y="333" width="633" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1010@0.27.1920.1010" timestamp="1596730858559" />
-    <state x="743" y="289" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598718631991">
+    <state x="743" y="289" width="424" height="484" key="FileChooserDialogImpl" timestamp="1600332938374">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="743" y="289" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010/1920.0.1920.1080@0.27.1920.1010" timestamp="1596689069235" />
-    <state x="743" y="289" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1598718631991" />
-    <state x="100" y="125" width="1720" height="812" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597953752639">
+    <state x="743" y="289" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1010@0.27.1920.1010" timestamp="1600332938374" />
+    <state x="449" y="166" key="SettingsEditor" timestamp="1600588784189">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="100" y="125" width="1720" height="812" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1597953752639" />
-    <state x="1015" y="365" width="709" height="578" key="find.popup" timestamp="1598713795470">
+    <state x="449" y="166" key="SettingsEditor/0.27.1920.1010@0.27.1920.1010" timestamp="1600588784189" />
+    <state x="100" y="125" width="1720" height="812" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600589972662">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="100" y="125" width="1720" height="812" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1600589972662" />
+    <state x="1015" y="365" width="709" height="578" key="find.popup" timestamp="1600601952064">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="875" y="339" width="709" height="578" key="find.popup/0.27.1920.1010/1920.0.1920.1080@0.27.1920.1010" timestamp="1596654530674" />
-    <state x="1015" y="365" width="709" height="578" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1598713795470" />
+    <state x="1015" y="365" width="709" height="578" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1600601952064" />
   </component>
 </project>
